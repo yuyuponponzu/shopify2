@@ -6,4 +6,6 @@ npm run start
 
 # branch
 前と同じでdevelopからブランチを切る感じで
-masterマージでherokuに自動でデプロイ
+developマージでherokuに自動でデプロイ
+
+https://heroku-next-bayashi.herokuapp.com/
