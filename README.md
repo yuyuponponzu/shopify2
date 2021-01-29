@@ -2,7 +2,9 @@
 npm install
 
 # start
-npm run dev //herokuがnpm run startに違うコマンド必要そうだったため。heroku動いてないから要修正
+npm run dev 
+
+//herokuがnpm run start専有するため
 
 # branch
 前と同じでdevelopからブランチを切る感じで
