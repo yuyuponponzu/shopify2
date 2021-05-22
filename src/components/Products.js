@@ -2,6 +2,8 @@ import React from 'react';
 import Product from './Product';
 import HamburgerMenu from '../atoms/organisms/hamburgermenu';
 import ToggleBar from '../atoms/atom/togglebar';
+import Coordinate from '../atoms/atom/coordinate';
+import ItemDetail from '../atoms/atom/itemdetail';
 import { useShopify } from '../hooks';
 
 export default (props) => {
@@ -9,7 +11,7 @@ export default (props) => {
     const { modalStatus, changeModalStatus } = useShopify();
 
     // コーディネートリスト
-    if (!modalStatus) {
+    if (modalStatus) {
         return (
             <>
                 <div className="Header">
@@ -45,12 +47,11 @@ export default (props) => {
                         changeModalStatus();
                     }}
                 >
-                    <ToggleBar status="list" />
+                    <ToggleBar status="detail" />
                 </div>
-                <div className="Products-wrapper">
-                    <div className="content_name">{content_name}</div>
-                    <Product history={props.history} />
-                </div>
+                {/* <div className="content_name2">Looks</div> */}
+                <Coordinate />
+                <ItemDetail />
             </>
         );
     }

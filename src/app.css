@@ -843,6 +843,7 @@ nav .inner ul li a:hover {
 
 .toggle_bar {
     position: fixed;
+    width: 100%;
 }
 
 .toggle_line1 {
@@ -863,22 +864,48 @@ nav .inner ul li a:hover {
     position: absolute;
 }
 
-.toggle_line1_modal {
-    margin-right: 10px;
-    margin-top: calc(35vh - 30px);
-    width: 1px;
-    height: 30vh;
-    background-color: black;
-    position: absolute;
+@media (max-width: 576px) {
+    .toggle_line1_modal {
+        /* left: calc(100vh - 20px); */
+        right: 10px;
+        margin-top: calc(35vh - 30px);
+        width: 1px;
+        height: 30vh;
+        background-color: black;
+        position: absolute;
+    }
+
+    .toggle_line2_modal {
+        /* left: calc(100vh - 10px); */
+        right: 20px;
+        margin-top: calc(42vh - 30px);
+        width: 1px;
+        height: 16vh;
+        background-color: black;
+        position: absolute;
+    }
 }
 
-.toggle_line2_modal {
-    margin-right: 20px;
-    margin-top: calc(42vh - 30px);
-    width: 1px;
-    height: 16vh;
-    background-color: black;
-    position: absolute;
+@media (min-width: 576px) {
+    .toggle_line1_modal {
+        /* left: calc(100vh - 45px); */
+        right: 25px;
+        margin-top: calc(35vh - 30px);
+        width: 1px;
+        height: 30vh;
+        background-color: black;
+        position: absolute;
+    }
+
+    .toggle_line2_modal {
+        /* left: calc(100vh - 35px); */
+        right: 35px;
+        margin-top: calc(42vh - 30px);
+        width: 1px;
+        height: 16vh;
+        background-color: black;
+        position: absolute;
+    }
 }
 
 .content_name {
@@ -888,4 +915,54 @@ nav .inner ul li a:hover {
     width: 100%;
     position: absolute;
     font-size: small;
+}
+
+.content_name2 {
+    text-align: center;
+    color: black;
+    top: 75px;
+    width: 100%;
+    position: absolute;
+    font-size: small;
+}
+
+.product_coordinate {
+    top: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.product_coordinate_underbar {
+    border-bottom: 1px solid black;
+    margin-left: 2vh;
+    width: 55%;
+    max-width: 470px;
+}
+
+.product_coordinate_text {
+    margin-left: 2vh;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.product_itemdetail {
+    top: 20px;
+    position: relative;
+    z-index: -1;
+}
+
+.product_itemdetail_underbar {
+    border-bottom: 1px solid black;
+    margin-left: 2vh;
+    width: 55%;
+    max-width: 470px;
+}
+
+.product_itemdetail_text {
+    margin-left: 2vh;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.product_itemdetail_img {
 }
