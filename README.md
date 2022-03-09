@@ -1,3 +1,7 @@
+# 概要
+https://github.com/yuyuponponzu/shopify
+のデザイン変更に伴い作り直したver
+
 # install
 npm install
 
